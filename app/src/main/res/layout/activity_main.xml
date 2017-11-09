@@ -19,13 +19,14 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
+            <ImageView
                 android:id="@+id/tv_main_topContent"
                 android:layout_width="match_parent"
                 android:layout_height="280dp"
                 android:background="#b5b433"
                 android:gravity="center"
-                android:src="@mipmap/ic_launcher"
+            android:scaleType="fitXY"
+                android:src="@mipmap/a"
                 android:text="我是头部"
                 android:textSize="22sp" />
 
@@ -43,5 +44,15 @@
 
 
     <include layout="@layout/include_header_itl" />
+
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:id="@+id/ly_bottom"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
 
 </RelativeLayout>
